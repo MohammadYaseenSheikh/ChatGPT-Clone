@@ -16,10 +16,12 @@ A conversational AI web application built with [Next.js](https://nextjs.org) and
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page Placeholder](https://via.placeholder.com/800x400?text=Home+Page+Screenshot)
+![Home Page Placeholder](![Uploading Screenshot 2025-06-21 at 4.41.43 PM.png…]()
+)
 
 ### Chat Interface
-![Chat Interface Placeholder](https://via.placeholder.com/800x400?text=Chat+Interface+Screenshot)
+![Chat Interface Placeholder](![image](https://github.com/user-attachments/assets/e4028e0e-d3bf-4b92-bca1-48f38458c620)
+)
 
 ---
 
