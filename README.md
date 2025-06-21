@@ -20,7 +20,7 @@ A conversational AI web application built with [Next.js](https://nextjs.org) and
 
 
 ### Chat Interface
-![image](https://github.com/user-attachments/assets/5e8af056-0605-4cef-b4c9-145d6fe10f22)
+![image](image.png)
 
 
 ---

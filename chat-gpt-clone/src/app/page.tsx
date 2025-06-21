@@ -49,12 +49,11 @@ export default function Home() {
   return (
     <div className="relative flex flex-col h-screen bg-[#343541] text-white">
       {/* Watermark */}
-      {messages.length === 0 && (
-        <div className="absolute inset-0 flex items-center justify-center text-7xl font-bold text-white opacity-5 select-none pointer-events-none z-0">
-          Ask AI
-        </div>
-      )}
+      <div className="absolute inset-0 flex items-center justify-center text-7xl font-bold text-white opacity-5 select-none pointer-events-none z-0">
+        Ask AI
+      </div>
 
+      {/* Chat Messages */}
       <div className="flex-1 overflow-y-auto px-4 py-6 z-10">
         <div className="max-w-3xl mx-auto space-y-4">
           {messages.map((msg, index) => (
@@ -71,7 +70,9 @@ export default function Home() {
               )}
               <div
                 className={`whitespace-pre-wrap p-4 rounded-lg ${
-                  msg.role === "user" ? "bg-[#40414f] text-right" : "bg-[#444654] text-left"
+                  msg.role === "user"
+                    ? "bg-[#40414f] text-right"
+                    : "bg-[#444654] text-left"
                 }`}
               >
                 {msg.content}
@@ -87,6 +88,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Input Section */}
       <div className="bg-[#343541] px-4 py-4 border-t border-gray-600 z-10">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-end">
@@ -95,7 +97,9 @@ export default function Home() {
               placeholder="Send a message..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && (e.preventDefault(), handleSend())}
+              onKeyDown={(e) =>
+                e.key === "Enter" && !e.shiftKey && (e.preventDefault(), handleSend())
+              }
             />
           </div>
           <p className="text-xs text-center text-gray-400 mt-2">
